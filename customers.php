@@ -18,22 +18,21 @@
          </tr>
          <tbody>
            <?php
-             include 'auth.php';
+             include('auth.php');
 
                $sql = "SELECT * FROM `customers`";
-               $result = mysqli_query($conn, $sql);;
+               $result = mysqli_query($conn, $sql);
               while($res=mysqli_fetch_array($result))
                {?>
                  <tr>
                    <td><?php echo $res['name']; ?></td>
                    <td><?php echo $res['email']; ?></td>
                    <td><?php echo $res['current_balance']; ?></td>
-                   <td><a href="#"><i class="fa fa-id-badge" ></i></a></td>
+                   <td><a href="viewcustomers.php?id=<?php echo $res['id']; ?>"><i class="fa fa-id-badge" ></i></a></td>
                  </tr>
-
-          <?php
-            }
-           ?>
+               <?php
+             }
+             ?>
          </tbody>
        </thead>
      </table>

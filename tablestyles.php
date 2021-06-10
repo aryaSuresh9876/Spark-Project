@@ -76,7 +76,32 @@
    justify-content: center;
  }
  body{
-   transform: scale(0.9);
+   padding-top: 30px;
+ }
+ .form{
+   padding: 6% 34%;
+ }
+ .mb-3{
+   padding-top: 3%;
+ }
+ .btn{
+   justify-content: center;
+   width: 440px;
+ }
+ .btn:hover{
+   background: #fff;
+   border: 2px solid black;
+   color: black;
+
+ }
+ .button-container{
+   padding-top: 4%;
+ }
+ .table-div{
+   padding-top: 3%;
+ }
+ .btn-1{
+   padding-top: 4%;
  }
 </style>
 
